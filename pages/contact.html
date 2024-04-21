@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="description" content="Seoul Tour Guide" name="keywords" content="Seoul, korea, food, travel" /> 
+         <link rel="stylesheet" href="../stylesheet/style.css" type="text/css"/>  
+	<title>Contact Us</title>
+
+	<style>
+	/* Your styles go here */
+     form{margin-left: 15px;
+     width: 200%;
+}
+
+
+
+input[type=text] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+input[type=submit] {
+    width: 5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+input[type=reset] {
+    width: 5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+select{
+	width: 15%;
+    padding: 15px 20px;
+    margin: 8px 5px;
+
+  }
+textarea{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+	</style>
+	
+    <script src="/script/index.js">
+	/* Your JavaScript goes here */
+   
+	</script>
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+<!--use <i> for italicizing word, <br> for break, <hr> for a line break, <h1> </h1> for header-->
+	<header>
+    
+<ul id="top"> 	
+    <li><a href="../index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="tourism.html" class="dropbtn">Tourism</a>
+    <div class="dropdown-content">
+      <a href="historical.html">Historical Places</a>
+      <a href="modern.html">Modern Places</a>
+    </div>
+  <li><a href="resto.html" class="dropbtn">Restaurants</a>
+  <li><a href="night.html" class="dropbtn">Night Life</a>
+ <li><a href="hotel.html" class="dropbtn"> Hotels</a>
+ <li><a href="shopping.html" class="dropbtn"> Shopping</a>
+ <li><a href="itinerary.html" class="dropbtn"> Sample Itinerary</a>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+ </ul>
+
+	</header>
+ 
+    <h1>Contact Us</h1>	
+    <form method="post" 	action="https://webdevbasics.net/scripts/demo.php" onsubmit="return validate()">
+        
+		<!-- Form text and input tags go here -->
+<p> Last Name: 
+    <input type="text" name="lastname" maxlength="100" id="last" />
+    First Name: 
+    <input type="text" name="firstname" maxlength="100" id="first" />
+ </p> 
+    <p>Gender: 
+Male <input type="radio" name="gender" value="male" id="m"/>
+Female <input type="radio" name="gender" value="female" id="f"/></p>
+  <p> What type of issue are you facing? 
+        <select> 
+            <option value="technical"> Technical </option>
+            <option value="content"> Content </option>
+            <option value="other"> Other </option>
+      </select></p> 
+<p>Please write your inquiries below. <br/>
+    <textarea name="comments" rows="5" cols="50" id="i">
+</textarea>
+    <br/>
+    <input type="submit" value="Submit" name="Submit"  />
+    <input type="reset" value="Reset" name="Reset" />
+
+</p>
+        </form>
+  </body>
+</html>

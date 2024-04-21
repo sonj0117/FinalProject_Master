@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="description" content="Seoul Tour Guide" name="keywords" content="Seoul, korea, food, travel" /> 
+         <link rel="stylesheet" href="../stylesheet/style.css" type="text/css"/>  
+	<title>Shopping Places</title>
+
+	<style>
+	/* Your styles go here */
+        body {padding: 14px 16px;
+        margin-left: 120px;}
+        img {width: 50%; border-radius: 25% 10%;}
+        p {width: 50%; text-align: justify}
+        h2 { font-family: "Papyrus"; font-weight: bold}
+        h3 { font-family:  Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;}
+	</style>
+	
+	<script>
+	/* Your JavaScript goes here */
+    var images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvtyc8Xz49jkPXUTPuVZHWU5Hzswrf3m9QSG84cf59Q_paRg_-kEDn_PbV0C2wtyqR74&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGxdgbSbtzyj5tMIffDIWIBi07cdMFzb2G9dasDsBSg&s", "https://english.visitseoul.net/comm/getImage?srvcId=POST&parentSn=11599&fileTy=POSTTHUMB&fileNo=1"]
+    var name1 = ["Galleria Department Store", "Boon The Shop","10 Corso Como"]
+    var images2 = ["https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/ow57DoUgdQJf6AFllMeujbARSADeHEnGJIHbA8~tplv-tej9nj120t-origin.webp","https://darcawards.com/wp-content/uploads/2024/01/Tamburins_7.jpg","https://retailstoretours.com/cdn/shop/products/ApgujeongRodeoStreetONE_800x.jpg?v=1665517559"]
+    var name2 = ["Hannam Shopping Street", "Seongsu Shopping Street","Apgujeong Rodeo Street"]
+    
+     var counter = 0 
+     function playSlideShow()
+        {   
+            rs();
+            counter = counter+1 
+            if (counter == images.length)
+                {
+                    counter = 0 
+                }
+            document.getElementById("img").src =images[counter]
+            document.getElementById("x").innerHTML=name1[counter]
+            document.getElementById("img2").src =images2[counter]
+            document.getElementById("y").innerHTML=name2[counter]
+            setTimeout("playSlideShow()", 5000)
+        }
+    function rs()
+        {
+            var w= window.innerWidth;
+            document.getElementById("img").style.height=.3*w + "px";
+             document.getElementById("img2").style.height=.3*w + "px";
+          
+        }
+    
+
+	</script>
+  </head>
+
+  <body onload="playSlideShow()" onresize="rs()">
+	<!-- Your HTML goes here -->
+<!--use <i> for italicizing word, <br> for break, <hr> for a line break, <h1> </h1> for header-->
+ 	<header>
+    
+    <ul id="top"> 	
+      <li><a href="../index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="tourism.html" class="dropbtn">Tourism</a>
+      <div class="dropdown-content">
+        <a href="historical.html">Historical Places</a>
+        <a href="modern.html">Modern Places</a>
+      </div>
+    <li><a href="resto.html" class="dropbtn">Restaurants</a>
+    <li><a href="night.html" class="dropbtn">Night Life</a>
+   <li><a href="hotel.html" class="dropbtn"> Hotels</a>
+   <li><a href="shopping.html" class="dropbtn"> Shopping</a>
+   <li><a href="itinerary.html" class="dropbtn"> Sample Itinerary</a>
+  <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+   </ul>
+		
+
+	</header>
+    
+    <h2> Luxury Shopping </h2>
+    <h3><div id="x"> Galleria Department Store</div></h3>
+        <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvtyc8Xz49jkPXUTPuVZHWU5Hzswrf3m9QSG84cf59Q_paRg_-kEDn_PbV0C2wtyqR74&usqp=CAU" title="galleria"/> 
+    
+    
+    <h2> Affordable Shopping </h2>
+       <h3><div id="y"> Hannam Shopping Street</div></h3>
+    <img id="img2" src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/ow57DoUgdQJf6AFllMeujbARSADeHEnGJIHbA8~tplv-tej9nj120t-origin.webp"/>
+  </body>
+</html>
